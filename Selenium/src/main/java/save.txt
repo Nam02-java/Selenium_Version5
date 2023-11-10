@@ -1,0 +1,28 @@
+/            WebElement uploadButton = driver.findElement(By.xpath("/html/body/section[1]/div/div/div[1]/div[1]/div[1]/div[1]/div/label[2]"));
+//            uploadButton.click();
+            Thread.sleep(2000);
+
+// Tìm đối tượng input file
+            WebElement inputFile = driver.findElement(By.xpath("//*[@id=\"file\"]"));
+            Thread.sleep(2000);
+
+            inputFile.sendKeys("E:\\Downloads\\7364(CAPTCHA).jpg");
+
+
+
+
+            //            if (!GraphicsEnvironment.isHeadless()) {
+            //                System.out.println("true");
+            //            } else {
+            //                System.out.println("false");
+            //            }
+
+
+
+    private static List<WebElement> element_solve;
+
+    element_solve = driver.findElements(By.xpath("//ins[@data-anchor-status='displayed']"));
+    if (element_solve.size() > 0 && element_solve.get(0).isDisplayed()) {
+     System.out.println("ad 1 displayed");
+      driver.findElement(By.xpath("(//div[@class='grippy-host'])[1]")).click();
+       }
